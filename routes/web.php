@@ -101,3 +101,8 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('slot',SlotController::class);
+Route::get('/test-admin', function(){
+    return view('layouts.admin');
+});
+
+//baru
